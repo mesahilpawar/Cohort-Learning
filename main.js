@@ -27,20 +27,31 @@
 // }
 
 // Creating object 
-let person = [{
-    firstName : 'sahil',
-    lastName : 'pawar',
-    gender : 'male',
-    age : 23,
-},{
-    firstName : 'priya',
-    lastName : 'patil',
-    gender : 'female',
-    age : 22,
-},{
-    firstName : 'rudra',
-    lastName : 'salunke',
-    gender : 'male',
-    age : 25,
-}]
-console.log(person[2])
+// let person = [{
+//     firstName : 'sahil',
+//     lastName : 'pawar',
+//     gender : 'male',
+//     age : 23,
+// },{
+//     firstName : 'priya',
+//     lastName : 'patil',
+//     gender : 'female',
+//     age : 22,
+// },{
+//     firstName : 'rudra',
+//     lastName : 'salunke',
+//     gender : 'male',
+//     age : 25,
+// }]
+// for (let i = 0 ; i < person.length; i++ ){
+//     if (person[i]['gender'] == 'male'){
+//         console.log(person[i]['firstName'])
+//     }
+// }
+
+// Creating function 
+function sum (a, b){
+    return a + b;
+}
+console.log(sum(5, 7))
+console.log(sum(5, 2))
