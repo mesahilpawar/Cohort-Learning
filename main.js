@@ -50,8 +50,36 @@
 // }
 
 // Creating function 
-function sum (a, b){
-    return a + b;
-}
-console.log(sum(5, 7))
-console.log(sum(5, 2))
+// function sum (a, b){
+//     return a + b;
+// }
+// console.log(sum(5, 7))
+// console.log(sum(5, 2))
+
+// Creating functions and call in one function 
+// function sum(val1, val2, fnToCall){
+//     let result = val1 + val2;
+//     fnToCall(result);
+// }
+
+// function displayResult(data){
+//     console.log(`the sum of two value is ` + data)
+// }
+
+// function displayResultPassive (data){
+//     console.log(`Sum's result is :` + data)
+// }
+
+// console.log(sum(4, 5, displayResultPassive))
+
+// const str = 'sahil prakash pawar';
+// console.log(str.replace('sahil', 'sham'))
+
+// 
+const currentDate = new Date ();
+
+console.log(`Todays Date is : ` + currentDate.getDate())
+console.log(`This Month is : ` + currentDate.getMonth() + 1)
+console.log(`This Year is : ` + currentDate.getFullYear())
+
+console.log(`current date is : ` + currentDate)
