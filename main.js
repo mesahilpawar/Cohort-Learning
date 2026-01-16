@@ -75,11 +75,102 @@
 // const str = 'sahil prakash pawar';
 // console.log(str.replace('sahil', 'sham'))
 
-// 
-const currentDate = new Date ();
+// Learning the date month year. 
+// const currentDate = new Date ();
 
-console.log(`Todays Date is : ` + currentDate.getDate())
-console.log(`This Month is : ` + currentDate.getMonth() + 1)
-console.log(`This Year is : ` + currentDate.getFullYear())
+// console.log(`Todays Date is : ` + currentDate.getDate())
+// console.log(`This Month is : ` + currentDate.getMonth() + 1)
+// console.log(`This Year is : ` + currentDate.getFullYear())
 
-console.log(`current date is : ` + currentDate)
+// console.log(`current date is : ` + currentDate)
+
+// let frontEnd = ['HTML', 'CSS', 'JavaScript']
+// let backEnd = ['MongoDB', 'Express', 'React']
+// let fullStack = frontEnd.concat(backEnd)
+// console.log(fullStack)
+
+// function personDetails(){
+//     return{
+//         firstName : 'sahil',
+//         lastName : 'pawar',
+//         age : 22,
+//         country : 'India',
+//         state : 'Maharashtra'
+//     }
+   
+
+// };
+// const person= new personDetails();
+// console.log(person.state)
+
+// loop 
+// let ans = 0;
+
+// for ( let i = 0; i <= 50; i++){
+//     ans = ans + i;
+// }
+// console.log(ans)
+
+// Function 
+// function findSum (n){
+//     ans = 0;
+//     for (let i = 0; i <= n; i++){
+//         ans = ans + i;
+//     }
+//     return ans;
+// }
+// console.log(findSum(25))
+
+// Function in another function 
+// function square(n){
+//     return n * n;
+// }
+// function cube(n){
+//     return n * n * n;
+// }
+
+// Sum of square
+// function sumOfSquare (a, b){
+//     let val1 = square(a);
+//     let val2 = square(b);
+
+//     return val1 + val2;
+// }
+
+// // Sum of cube
+// function sumOfCube (a, b){
+//     let val1 = cube(a);
+//     let val2 = cube(b);
+
+//     return val1 + val2;
+// }
+// console.log(sumOfSquare(1,2))
+// console.log(sumOfCube(2,2))
+
+// Callback function 
+// function square(a){
+//     a * a 
+// }
+
+// function someOfThing(a, b, fn){
+//     let val1 = fn(a);
+//     let val2 = fn(b);
+//     return val1 + val2
+// }
+// console.log(someOfThing(2, 2, cube))
+
+// Async Function 
+
+function sum (n){
+    let ans = 0;
+    for (let i = 0; i < n; i++){
+        ans =  ans + i;
+    }
+    return ans;
+}
+function tillSum100(){
+    return sum(100)
+}
+setTimeout (tillSum100, 5000)
+console.log('Hello world')
+
