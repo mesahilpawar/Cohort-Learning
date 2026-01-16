@@ -161,16 +161,22 @@
 
 // Async Function 
 
-function sum (n){
-    let ans = 0;
-    for (let i = 0; i < n; i++){
-        ans =  ans + i;
-    }
-    return ans;
-}
-function tillSum100(){
-    return sum(100)
-}
-setTimeout (tillSum100, 5000)
-console.log('Hello world')
+// function sum (n){
+//     let ans = 0;
+//     for (let i = 0; i < n; i++){
+//         ans =  ans + i;
+//     }
+//     return ans;
+// }
+// function tillSum100(){
+//     return sum(100)
+// }
+// setTimeout (tillSum100, 5000)
+// console.log('Hello world')
 
+// Read file using async function 
+const fs = require("fs");
+//File module
+fs.readFile("data.txt", "utf-8", function(err, data){
+    console.log(data)
+})
