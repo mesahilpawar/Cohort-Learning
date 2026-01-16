@@ -175,8 +175,24 @@
 // console.log('Hello world')
 
 // Read file using async function 
+// const fs = require("fs");
+// //File module
+// fs.readFile("data.txt", "utf-8", function(err, data){
+//     console.log(data)
+// })
+
+// Learning promises function 
 const fs = require("fs");
-//File module
-fs.readFile("data.txt", "utf-8", function(err, data){
+function readDataFile(){
+    return new Promise(function(resolve){
+        fs.readFile("data.txt", 'utf-8', function(err, data) {
+            resolve(data)
+        });
+    })
+
+}
+
+function onDone(data){
     console.log(data)
-})
+}
+readDataFile().then(onDone);
