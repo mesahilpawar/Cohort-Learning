@@ -221,11 +221,15 @@
 
 function funSahil(){
     let d = new Promise(function(resolve){
-        setTimeout(resolve, 5000)
+        setTimeout(function(){
+            resolve("hi there")
+        }, 2000)
+        
     });
     return d;
 }
-const value = funSahil();
-value.then(function(){
-    console.log("Hi sahil from this side")
-});
+async function main (){
+    let value = await funSahil()
+    console.log(value)
+}
+main()
