@@ -182,17 +182,26 @@
 // })
 
 // Learning promises function 
-const fs = require("fs");
-function readDataFile(){
-    return new Promise(function(resolve){
-        fs.readFile("data.txt", 'utf-8', function(err, data) {
-            resolve(data)
-        });
-    })
+// const fs = require("fs");
+// function readDataFile(){
+//     return new Promise(function(resolve){
+//         fs.readFile("data.txt", 'utf-8', function(err, data) {
+//             resolve(data)
+//         });
+//     })
 
-}
+// }
 
-function onDone(data){
-    console.log(data)
-}
-readDataFile().then(onDone);
+// function onDone(data){
+//     console.log(data)
+// }
+// readDataFile().then(onDone);
+
+// return promises 
+let d = new Promise(function(resolve){
+    resolve("foo");
+})
+function Callback(){
+    console.log(d)
+};
+d.then(Callback)
