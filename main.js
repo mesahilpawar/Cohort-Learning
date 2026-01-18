@@ -206,13 +206,26 @@
 // };
 // d.then(Callback)
 
-function sahil(){
-    let p =new Promise(function(resolve){
-        setTimeout(resolve, 2000)
+
+//Learning the promises to print the message after 2 second
+// function sahil(){
+//     let p =new Promise(function(resolve){
+//         setTimeout(resolve, 2000)
+//     });
+//     return p;
+// }
+// const value = sahil();
+// value.then(function(){
+//     console.log("Hi there")
+// })
+
+function funSahil(){
+    let d = new Promise(function(resolve){
+        setTimeout(resolve, 5000)
     });
-    return p;
+    return d;
 }
-const value = sahil();
+const value = funSahil();
 value.then(function(){
-    console.log("Hi there")
-})
+    console.log("Hi sahil from this side")
+});
