@@ -198,10 +198,21 @@
 // readDataFile().then(onDone);
 
 // return promises 
-let d = new Promise(function(resolve){
-    resolve("foo");
+// let d = new Promise(function(resolve){
+//     resolve("foo");
+// })
+// function Callback(){
+//     console.log(d)
+// };
+// d.then(Callback)
+
+function sahil(){
+    let p =new Promise(function(resolve){
+        setTimeout(resolve, 2000)
+    });
+    return p;
+}
+const value = sahil();
+value.then(function(){
+    console.log("Hi there")
 })
-function Callback(){
-    console.log(d)
-};
-d.then(Callback)
