@@ -219,17 +219,37 @@
 //     console.log("Hi there")
 // })
 
-function funSahil(){
-    let d = new Promise(function(resolve){
-        setTimeout(function(){
-            resolve("hi there")
-        }, 2000)
+// function funSahil(){
+//     let d = new Promise(function(resolve){
+//         setTimeout(function(){
+//             resolve("hi there")
+//         }, 2000)
         
-    });
-    return d;
+//     });
+//     return d;
+// }
+// async function main (){
+//     let value = await funSahil()
+//     console.log(value)
+// }
+// main()
+
+
+// Revision of callback functions 
+function square (n){
+    return n * n
 }
-async function main (){
-    let value = await funSahil()
-    console.log(value)
+function cube(n){
+    return n * n * n
 }
-main()
+function quad(n){
+    return n * n * n * n
+}
+function sumOfSomething(a, b, fn){
+    let val1 = fn(a)
+    let val2 = fn(b)
+    return val1 + val2;
+}
+const result = sumOfSomething(1, 2, quad);
+console.log(result)
+
