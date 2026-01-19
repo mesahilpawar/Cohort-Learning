@@ -236,20 +236,38 @@
 
 
 // Revision of callback functions 
-function square (n){
-    return n * n
+// function square (n){
+//     return n * n
+// }
+// function cube(n){
+//     return n * n * n
+// }
+// function quad(n){
+//     return n * n * n * n
+// }
+// function sumOfSomething(a, b, fn){
+//     let val1 = fn(a)
+//     let val2 = fn(b)
+//     return val1 + val2;
+// }
+// const result = sumOfSomething(1, 2, quad);
+// console.log(result)
+
+
+// async function 
+const fs = require("fs");
+let a = 0;
+console.log(a);
+
+fs.readFile( 'data.txt', 'utf-8', function(err, data){
+    console.log("Reading data from the file is : ")
+    console.log(data)
+})
+
+
+let ans = 0;
+for (let i = 0; i < 10; i++){
+    ans = ans + i
 }
-function cube(n){
-    return n * n * n
-}
-function quad(n){
-    return n * n * n * n
-}
-function sumOfSomething(a, b, fn){
-    let val1 = fn(a)
-    let val2 = fn(b)
-    return val1 + val2;
-}
-const result = sumOfSomething(1, 2, quad);
-console.log(result)
+console.log(ans);
 
