@@ -255,19 +255,28 @@
 
 
 // async function 
-const fs = require("fs");
-let a = 0;
-console.log(a);
+// const fs = require("fs");
+// let a = 0;
+// console.log(a);
 
-fs.readFile( 'data.txt', 'utf-8', function(err, data){
-    console.log("Reading data from the file is : ")
-    console.log(data)
-})
+// fs.readFile( 'data.txt', 'utf-8', function(err, data){
+//     console.log("Reading data from the file is : ")
+//     console.log(data)
+// })
+
+
+// let ans = 0;
+// for (let i = 0; i < 10; i++){
+//     ans = ans + i
+// }
+// console.log(ans);
 
 
 let ans = 0;
+setTimeout(function(){
+    console.log("Total addition of first 10 numbers is : " + ans )
+}, 20000)
+
 for (let i = 0; i < 10; i++){
     ans = ans + i
 }
-console.log(ans);
-
