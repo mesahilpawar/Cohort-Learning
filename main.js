@@ -272,11 +272,20 @@
 // console.log(ans);
 
 
-let ans = 0;
-setTimeout(function(){
-    console.log("Total addition of first 10 numbers is : " + ans )
-}, 20000)
+// let ans = 0;
+// setTimeout(function(){
+//     console.log("Total addition of first 10 numbers is : " + ans )
+// }, 20000)
 
-for (let i = 0; i < 10; i++){
-    ans = ans + i
-}
+// for (let i = 0; i < 10; i++){
+//     ans = ans + i
+// }
+
+// Creating setTimeout inside the setTimeout function
+setTimeout(function(){
+    console.log("hi this is from sahil")
+    setTimeout(function(){
+        console.log("hi there it's from inside the sahil")
+    }, 2000)
+}, 1000)
+
